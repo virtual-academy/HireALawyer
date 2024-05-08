@@ -20,10 +20,10 @@ const userSchema = new mongoose.Schema({
     },
     city:{
         type:String,
-        default:'Ksur'
-    }
+        default:'Kasur'
+    },
 
 });
 
-const UserModel = mongoose.Model('user', userSchema);
-module.exports = UserModel;
+const userModel = mongoose.model("user", userSchema);
+module.exports = userModel;
